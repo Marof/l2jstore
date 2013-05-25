@@ -1,0 +1,14 @@
+div.loader {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -75px;
+    display: none;
+}
+
+div#item_table {
+    display: none;   
+}
+
+input[name=upload_icon] {
+    visibility: hidden;   
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+ 
+{% include 'layout/head.html' %}
+<body>
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+            
+    {% include 'layout/header.html' %}
+    
+        <div class="clearfix"></div>
+
+        <div id="wrap">
+            {% include content %}
+        </div>
+        
+        <div class="clearfix"></div>
+
+    {% include 'layout/footer.html' %}
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="public/js/plugins.js"></script>
+        <script src="public/js/main.js"></script>
+        
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="public/_resources/bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- jQuery UI -->
+        <script type="text/javascript" src="public/_resources/jquery-ui/js/jquery-ui-1.10.1.custom.min.js"></script>
+        
+        <!-- Login JS -->
+        <script type="text/javascript" src="public/js/login.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+
+</html>
